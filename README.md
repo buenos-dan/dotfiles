@@ -1,28 +1,34 @@
-# Vimux: basic configs of tmux and vim
+# Vimux: basic configs of tmux and vim (On Mac)
 
-## Vim config
+## Do These Things To Quickly Setup My Dev Env.
+### zsh config
+```
+cp zsh/zshrc ~/.zshrc
+
+brew install ripgrep
+```
+
+### Vim config
 ```bash
 cp -r vim ~/.vim
 rm ~/.vimrc
 ```
 
-## Tmux config
+### Tmux config
 ```bash
 cp -r tmux ~/.config/tmux
 ```
 
-## Git config
+### Git config
 ```
 cp git/gitconfig ~/.gitconfig
 
-# Note: No need to set anymore
-# Set global ignore pattern
-# git config --global core.excludesfile ~/vimux/git/gitignore
-# Set no pager in branch cmd
-# git config --global pager.branch false
+# [opt] Set global ignore pattern
+git config --global core.excludesfile git/gitignore
 ```
 
-## Ctags config
+## Do These Things If You Like.
+### Ctags config
 ```
 # install exuberant-ctags
 apt install exuberant-ctags
@@ -33,7 +39,7 @@ cd <your code_ws>
 ctags
 ```
 
-## Install 256color-xterm
+### Install 256color-xterm
 ```
 # 1. check term color support
 echo $TERM

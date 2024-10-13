@@ -1,10 +1,10 @@
 [user]
 	name = danmingdi.buenos
 	email = danmingdi.buenos@bytedance.com
-[core]
-	excludesfile = /root/vimux/git/gitignore
 [pager]
 	branch = false
+[diff]
+	tool = vimdiff
 [alias]
 	st = status
 	co = checkout
