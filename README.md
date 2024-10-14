@@ -1,13 +1,20 @@
-# Vimux: basic configs of tmux and vim
+# Vimux: basic configs of tmux and vim (For Linux)
 
 ## Vim config
 ```bash
 cp -r vim ~/.vim
 rm ~/.vimrc
+
+# Install vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 ## Tmux config
 ```bash
+# Install Tmux
+apt install tmux fzf ripgrep bat
+
 cp -r tmux ~/.config/tmux
 ```
 
