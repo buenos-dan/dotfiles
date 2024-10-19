@@ -5,13 +5,18 @@
 ```
 cp zsh/zshrc ~/.zshrc
 
-brew install ripgrep
+brew install ripgrep fzf bat
+
 ```
 
 ### Vim config
 ```bash
 cp -r vim ~/.vim
 rm ~/.vimrc
+
+# Install vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 ### Tmux config

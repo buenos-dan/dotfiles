@@ -1,6 +1,6 @@
 # Obsidian config
 VAULT_PATH="~/Zettelkasten"
-alias zk="vim --cmd 'let g:zettelkasten_mode=1 | cd ${VAULT_PATH}'"
+alias zk="vim --cmd 'let g:loaded_zettelkasten=1 | cd ${VAULT_PATH}' -c 'OpenTodayDiaryNote'"
 
 # Excalidraw config
 alias excali="open https://excalidraw.com/"
@@ -9,8 +9,8 @@ alias excali="open https://excalidraw.com/"
 alias dq="open https://www.oxfordlearnersdictionaries.com/definition/english"
 
 alias att_gravity="kinit;ssh gravity -t 'bash /root/.att_devbox.sh'"
-alias att_mapupdate="kinit;ssh mapupdate -t 'bash /root/.att_devbox.sh'"
-alias att_new="kinit;ssh new_mapupdate -t 'bash /root/.att_devbox.sh'"
+#alias att_mapupdate="kinit;ssh mapupdate -t 'bash /root/.att_devbox.sh'"
+alias att_mapupdate="kinit;ssh new_mapupdate -t 'bash /root/.att_devbox.sh'"
 
 
 
