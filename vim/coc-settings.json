@@ -1,0 +1,9 @@
+{
+    "diagnostic.showUnused": false,
+    "python.pythonPath": "/usr/bin/python3",
+    "python.analysis.typeCheckingMode": "off",
+    "pyright.inlayHints.enable": false,
+    "pyright.inlayHints.functionReturnTypes": false,
+    "pyright.inlayHints.variableTypes": false,
+    "pyright.inlayHints.parameterTypes": false
+}
