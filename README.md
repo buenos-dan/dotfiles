@@ -1,4 +1,4 @@
-# Vimux: basic configs of tmux and vim (On Mac)
+# Personal dot files (On Mac)
 
 ## Do These Things To Quickly Setup My Dev Env.
 ### zsh config
@@ -11,12 +11,19 @@ brew install ripgrep fzf bat
 
 ### Vim config
 ```bash
+rm -rf ~/.vim
 cp -r vim ~/.vim
 rm ~/.vimrc
 
 # Install vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Install Plugin(open vim first)
+:PlugInstall
+
+# [opt] Install coc-pyright
+:CocInstall coc-pyright
 ```
 
 ### Tmux config
