@@ -7,7 +7,7 @@ set relativenumber
 set hlsearch
 
 " Python formatting
-au BufNewFile,BufRead *.py,*.md
+au BufNewFile,BufRead *.py
     \ set textwidth=79 |
     \ set expandtab |
     \ set autoindent |

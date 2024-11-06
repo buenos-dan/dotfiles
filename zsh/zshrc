@@ -1,10 +1,3 @@
-# Obsidian config
-VAULT_PATH="~/Zettelkasten"
-alias zk="vim --cmd 'let g:loaded_zettelkasten=1 | cd ${VAULT_PATH}' -c 'OpenTodayDiaryNote'"
-
-# Excalidraw config
-alias excali="open https://excalidraw.com/"
-
 # Dictionary
 alias dq="open https://www.oxfordlearnersdictionaries.com/definition/english"
 

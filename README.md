@@ -4,6 +4,7 @@
 ### zsh config
 ```
 cp zsh/zshrc ~/.zshrc
+sudo ln -s zsh/zettlekasten.sh /usr/local/bin/zk
 
 brew install ripgrep fzf bat
 
