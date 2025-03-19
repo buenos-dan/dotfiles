@@ -2,18 +2,17 @@
 
 ## Bash config
 ```
-apt install tmux fzf ripgrep bat exuberant-ctags
+apt install tmux fzf ripgrep bat
 
 ```
 
 ## Vim config
 ```bash
 rm -rf ~/.vim
-cp -r vim ~/.vim
 rm ~/.vimrc
+cp -r vim ~/.vim
 
-# Install nodejs
-# Ref: https://nodejs.org/en/download/
+# Install nodejs: https://nodejs.org/en/download/
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 # close terminal and reopen it.
 nvm install 22
@@ -46,15 +45,6 @@ git config --global core.excludesfile ~/.config/git/gitignore
 # git config --global pager.branch false
 ```
 
-## Ctags config
-```
-cp ctag/ctags ~/.ctags
-
-# create ctag file
-cd <your code_ws>
-ctags
-```
-
 ## Install 256color-xterm
 ```
 # 1. check term color support
@@ -66,8 +56,3 @@ echo $TERM
 echo "export TERM=xterm-256color" >> ~/.bashrc
 source ~/.bashrc
 ```
-
-
-## Other QA
-1. how to delete swp file recursively?
-`find ./ -name *.swp -type f -delete`

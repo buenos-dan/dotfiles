@@ -5,6 +5,7 @@ source $VIMRUNTIME/defaults.vim
 set cursorline
 set relativenumber
 set hlsearch
+set noswapfile
 
 " Python formatting
 au BufNewFile,BufRead *.py,*.md
@@ -17,9 +18,6 @@ au BufNewFile,BufRead *.py,*.md
     \ set fileformat=unix |
 
 call plug#begin()
-
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
