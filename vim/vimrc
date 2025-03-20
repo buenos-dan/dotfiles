@@ -1,10 +1,12 @@
 unlet! skip_defaults_vim
+let $LANG = 'en_US'
 source $VIMRUNTIME/defaults.vim
 
 " basic config
 set cursorline
 set relativenumber
 set hlsearch
+set noswapfile
 
 " Python formatting
 au BufNewFile,BufRead *.py
@@ -17,9 +19,6 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix |
 
 call plug#begin()
-
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 

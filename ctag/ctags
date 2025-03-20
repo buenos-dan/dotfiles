@@ -1,6 +1,0 @@
---recurse=yes
---exclude=.git
---exclude=.vim
---exclude=\*.swp
---exclude=\*.pyc
---exclude=wandb/*

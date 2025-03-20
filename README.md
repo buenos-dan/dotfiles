@@ -6,7 +6,7 @@
 cp zsh/zshrc ~/.zshrc
 sudo ln -s zsh/zettlekasten.sh /usr/local/bin/zk
 
-brew install ripgrep fzf bat
+brew install fd fzf ripgrep bat
 
 ```
 
@@ -41,16 +41,6 @@ git config --global core.excludesfile git/gitignore
 ```
 
 ## Do These Things If You Like.
-### Ctags config
-```
-# install exuberant-ctags
-apt install exuberant-ctags
-cp ctag/ctags ~/.ctags
-
-# create ctag file
-cd <your code_ws>
-ctags
-```
 
 ### Install 256color-xterm
 ```
