@@ -1,15 +1,14 @@
-unlet! skip_defaults_vim
-source $VIMRUNTIME/defaults.vim
 
 " basic config
 set cursorline
 set relativenumber
 set hlsearch
 set noswapfile
+set signcolumn=no
 
 " Python formatting
 au BufNewFile,BufRead *.py,*.md
-    \ set textwidth=79 |
+    \ set textwidth=120 |
     \ set expandtab |
     \ set autoindent |
     \ set tabstop=4 |
@@ -29,27 +28,5 @@ call plug#end()
 colorscheme apprentice
 
 " Key binding
-nnoremap <Leader>t :25Le<CR>
 nmap <silent><Leader>g :call setbufvar(winbufnr(popup_atcursor(split(system("git log -n 1 -L " . line(".") . ",+1:" . expand("%:p")), "\n"), { "padding": [1,1,1,1], "pos": "botleft", "wrap": 0 })), "&filetype", "git")<CR>
-
-" coc config
-set signcolumn=no
-" " Use `[g` and `]g` to navigate diagnostics
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
 nmap <silent> gd <Plug>(coc-definition)
-
-" Leader Key binding
-nnoremap <Leader>t :25Le<CR>
-nnoremap <silent><Leader>l :call setbufvar(winbufnr(popup_atcursor(split(system("git log -n 1 -L " . line(".") . ",+1:" . expand("%:p")), "\n"), { "padding": [1,1,1,1], "pos": "botleft", "wrap": 0 })), "&filetype", "git")<CR>
-nnoremap <silent><Leader>b :Buffers<CR>
-nnoremap <silent><Leader>f :Files<CR>
-nnoremap <silent><Leader>g :Rg<CR>
-" nnoremap <silent><Leader>/ :BLines<CR>
-nnoremap <silent><Leader>m :Marks<CR>
-" nnoremap <silent><Leader>gi :Commits<CR>
-nnoremap <silent><Leader>s :GFiles?<CR>
-nnoremap <silent><Leader>H :Helptags<CR>
-nnoremap <silent><Leader>h :History<CR>
-" nnoremap <silent><Leader>h: :History:<CR>
-" nnoremap <silent><Leader>h/ :History/<CR>
