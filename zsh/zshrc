@@ -1,9 +1,10 @@
-# Dictionary
-alias dq="open https://www.oxfordlearnersdictionaries.com/definition/english"
+export LANG=en_US.UTF-8
 
-alias att_gravity="kinit;ssh gravity -t 'bash /root/.att_devbox.sh'"
-#alias att_mapupdate="kinit;ssh mapupdate -t 'bash /root/.att_devbox.sh'"
-alias att_mapupdate="kinit;ssh new_mapupdate -t 'bash /root/.att_devbox.sh'"
+alias emacs="emacs -nw"
+
+alias att_e2e="kinit;ssh e2e -t 'tmux att'"
+alias att_gravity="kinit;ssh gravity -t 'tmux att'"
+alias att_mapupdate="kinit;ssh mapupdate -t 'tmux att'"
 
 
 

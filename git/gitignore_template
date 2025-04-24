@@ -1,0 +1,32 @@
+__pycache__
+*.pyc
+*.pyo
+*.so
+*.egg
+.Python
+
+# compile artifacts
+build/*
+dist/*
+*.egg-info/
+
+# exp artifacts
+logs
+*_logs
+wandb
+
+# tests/release artifacts
+*coverage*
+*.log
+.hypothesis
+
+# ckpt
+*.pt
+ckpts
+
+# vim files
+*.vim
+*.swp
+*.swo
+tags
+
