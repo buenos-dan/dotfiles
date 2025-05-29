@@ -4,6 +4,7 @@ let $LANG = 'en_US'
 set cursorline
 set relativenumber
 set hlsearch
+set incsearch
 set noswapfile
 set signcolumn=no
 
