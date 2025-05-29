@@ -3,6 +3,7 @@
 set cursorline
 set relativenumber
 set hlsearch
+set incsearch
 set noswapfile
 set signcolumn=no
 
