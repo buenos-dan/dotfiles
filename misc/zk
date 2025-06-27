@@ -3,5 +3,5 @@
 VAULT_PATH="${HOME}/Zettelkasten"
 cd ${VAULT_PATH}
 
-filename=$(fd --extension md --exclude template --exclude Excalidraw | fzf)
+filename=$(fd --extension md --extension org --exclude template | fzf)
 vim --cmd 'let g:loaded_zettelkasten=1' ${filename}
