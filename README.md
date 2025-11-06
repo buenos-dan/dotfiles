@@ -12,18 +12,13 @@ brew install fd fzf ripgrep bat
 
 ### Vim config
 ```bash
-rm -rf ~/.vim
 cp -r vim ~/.vim
-rm ~/.vimrc
 
-# Install vim-plug
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# (optional) remove old config
+rm ~/.vimrc
 
 # Install Plugin(open vim first)
 :PlugInstall
-
-# [opt] Install coc-pyright
 :CocInstall coc-pyright
 ```
 
