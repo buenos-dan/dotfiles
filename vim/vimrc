@@ -4,7 +4,6 @@ set relativenumber
 set hlsearch
 set incsearch
 set noswapfile
-set signcolumn=no
 
 " Python formatting
 au BufNewFile,BufRead *.py,*.md
@@ -29,4 +28,15 @@ colorscheme apprentice
 
 " Key binding
 nmap <silent><Leader>g :call setbufvar(winbufnr(popup_atcursor(split(system("git log -n 1 -L " . line(".") . ",+1:" . expand("%:p")), "\n"), { "padding": [1,1,1,1], "pos": "botleft", "wrap": 0 })), "&filetype", "git")<CR>
+
+
+" coc config
+set signcolumn=no
 nmap <silent> gd <Plug>(coc-definition)
+
+" use emacs motion in vim cmd mode
+cnoremap <C-A> <Home>
+cnoremap <C-F> <Right>
+cnoremap <C-B> <Left>
+cnoremap <Esc>b <S-Left>
+cnoremap <Esc>f <S-Right>
