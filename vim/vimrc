@@ -34,7 +34,8 @@ nmap <silent><Leader>g :call setbufvar(winbufnr(popup_atcursor(split(system("git
 set signcolumn=no
 nmap <silent> gd <Plug>(coc-definition)
 
-" use emacs motion in vim cmd mode
+" use emacs motion in command line editing, see details:
+" :help cmdline-editing
 cnoremap <C-A> <Home>
 cnoremap <C-F> <Right>
 cnoremap <C-B> <Left>
